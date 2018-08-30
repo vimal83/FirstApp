@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/category_upload"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1">
+    <EditText
+        android:id="@+id/editTextTags"
+        android:hint="Image Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.99" />
+
+    <ImageButton
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@drawable/save2"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:background="@drawable/save2" />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/btnGallery"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:background="@drawable/gallery" />
+            <ImageButton
+                android:id="@+id/btnCamera"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:background="@drawable/camera" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
